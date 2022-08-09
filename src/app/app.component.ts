@@ -8,11 +8,11 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'curso-angular';
 
- transferencia: any;
+ transferencias: any[] = [];
 
   tranferir($event) {
     console.log($event);
-    this.transferencia = $event;
-
+    const transferencia = {...$event, data: new Date()};
+    this.transferencias.push(transferencia);
   }
 }
