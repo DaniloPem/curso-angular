@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'curso-angular';
+
+ transferencia: any;
+
+  tranferir($event) {
+    console.log($event);
+    this.transferencia = $event;
+
+  }
 }
